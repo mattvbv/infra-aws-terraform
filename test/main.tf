@@ -9,7 +9,7 @@ terraform {
 }
 
 module "vpc" {
-  source = "../modules/vpc"
+  source = "../modules/vpc_single_zone"
   env_name = "${var.env_name}"
   domain_name = "${var.domain_name}"
   key_name = "${var.key_name}"
