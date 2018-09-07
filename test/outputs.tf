@@ -14,3 +14,7 @@ output "sn_zone1_private1_id" {
   value = "${module.vpc.sn_zone1_private1_id}"
 }
 
+output "dns_zone_id" {
+  value = "${module.vpc.dns_zone_id}"
+}
+
