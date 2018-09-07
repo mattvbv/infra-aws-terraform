@@ -13,3 +13,7 @@ output "sg_private_id" {
 output "sn_zone1_private1_id" {
   value = "${aws_subnet.subnet-zone1-private-1.id}"
 }
+
+output "dns_zone_id" {
+  value = "${aws_route53_zone.dnsZone.zone_id}"
+}
