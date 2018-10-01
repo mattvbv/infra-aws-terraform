@@ -6,6 +6,10 @@ output "bastion-eip" {
   value = "${aws_eip.eip-bastion.public_ip}"
 }
 
+output "sn_zone1_public1_id" {
+  value = "${aws_subnet.subnet-zone1-public-1.id}"
+}
+
 output "sg_private_id" {
   value = "${aws_security_group.private.id}"
 }
